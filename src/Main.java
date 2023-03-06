@@ -5,7 +5,7 @@ public class Main {
 
         System.out.print("Введите значение x: ");
         double x = in.nextDouble();
-        System.out.print("Введите количество: ");
+        System.out.print("Введите размер: ");
         int size = in.nextInt();
 
         double result = x;
