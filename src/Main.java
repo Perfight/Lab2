@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
@@ -22,6 +23,8 @@ public class Main {
         }
         System.out.println("Результат: " + result);
 
+        if (Math.abs(result % x) < 1) {
+            System.out.println("Ошибка:|x| должен быть меньше 1.");
         }
-
     }
+}
