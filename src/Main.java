@@ -6,6 +6,10 @@ public class Main {
 
         System.out.print("Введите значение x: ");
         double x = in.nextDouble();
+        if (Math.abs(x) >= 1) {
+            System.out.println("Ошибка:|x| должен быть меньше 1.");
+        }
+        else {
         System.out.print("Введите размер: ");
         int size = in.nextInt();
 
@@ -22,9 +26,6 @@ public class Main {
             result += a * Math.pow(x, (2 * n + 1)) / b;
         }
         System.out.println("Результат: " + result);
-
-        if (Math.abs(result % x) < 1) {
-            System.out.println("Ошибка:|x| должен быть меньше 1.");
         }
     }
 }
